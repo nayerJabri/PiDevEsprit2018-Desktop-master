@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="522.0" prefWidth="877.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Core.ForgotPassController">
+   <children>
+      <AnchorPane prefHeight="522.0" prefWidth="877.0">
+         <children>
+            <MediaView fx:id="mv" />
+            <TextField fx:id="mailid" layoutX="241.0" layoutY="261.0" prefHeight="26.0" prefWidth="396.0" promptText="Entrez votre email" />
+            <Button fx:id="btnid" layoutX="391.0" layoutY="318.0" mnemonicParsing="false" onAction="#SendMail" prefHeight="26.0" prefWidth="96.0" text="Envoyer" />
+            <JFXRadioButton fx:id="btn" layoutX="6.0" layoutY="487.0" onAction="#OnClick_btn_play" text="Play" textFill="#fffefe" />
+            <Label layoutX="360.0" layoutY="104.0" prefHeight="34.0" prefWidth="157.0" text="My SoulMate" textFill="WHITE">
+               <font>
+                  <Font name="Britannic Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="290.0" layoutY="169.0" prefHeight="22.0" prefWidth="306.0" text="Inserez l'email que vous avez choisie" textFill="#f2f2f2">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="290.0" layoutY="204.0" prefHeight="18.0" prefWidth="231.0" text="lors de l'inscription" textFill="#fffefe">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label fx:id="label" layoutX="92.0" layoutY="481.0" textFill="#f50000" />
+      <Label fx:id="exit" layoutX="856.0" onMouseClicked="#exit" text="X" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="730.0" prefWidth="1013.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Modifier_sujetController">
+   <children>
+      <Label layoutX="93.0" layoutY="32.0" prefHeight="18.0" prefWidth="327.0" text="Modifier Votre Sujet :" textFill="#2319d7">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="contenu" layoutX="157.0" layoutY="188.0" prefHeight="200.0" prefWidth="616.0" promptText="Description" />
+      <TextField fx:id="libelle" layoutX="157.0" layoutY="113.0" prefHeight="26.0" prefWidth="616.0" promptText="Titre" />
+      <Button fx:id="modifier" layoutX="531.0" layoutY="432.0" mnemonicParsing="false" onAction="#Modifier" prefHeight="26.0" prefWidth="236.0" text="Modifier" />
+      <Label fx:id="label" layoutX="157.0" layoutY="513.0" prefHeight="18.0" prefWidth="466.0" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="image" layoutX="157.0" layoutY="433.0" mnemonicParsing="false" onAction="#insertion" prefHeight="26.0" prefWidth="278.0" text="Image" />
+   </children>
+</AnchorPane>

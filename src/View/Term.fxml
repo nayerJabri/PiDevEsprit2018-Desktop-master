@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Core.TermController">
+   <children>
+      <Label layoutX="102.0" layoutY="14.0" prefHeight="59.0" prefWidth="396.0" text="Terms d'utilisation">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="txt" editable="false" layoutX="14.0" layoutY="83.0" maxWidth="565.0" minWidth="565.0" prefHeight="235.0" prefWidth="565.0" />
+      <JFXCheckBox fx:id="terms" layoutX="147.0" layoutY="328.0" prefHeight="17.0" prefWidth="300.0" text="J'ai lu et j'accepte les terms d'utilisation" />
+      <JFXButton fx:id="signupbtn" layoutX="211.0" layoutY="356.0" onAction="#signUp" prefHeight="26.0" prefWidth="171.0" ripplerFill="#0d2872" style="-fx-background-color: #e32d62;" text="Sign UP" textFill="#e4dfdf">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

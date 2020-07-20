@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ParamsEducController">
+         <children>
+            <Label fx:id="nomp" layoutX="171.0" layoutY="3.0" text="Abdennadher Achraf">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="photop" fitHeight="119.0" fitWidth="123.0" layoutX="41.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/5a98b6dd37fff.jpg" />
+               </image>
+            </ImageView>
+            <HBox alignment="CENTER" layoutY="123.0" prefHeight="37.0" prefWidth="948.0">
+               <children>
+                  <Button fx:id="journalButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#journalAction" prefHeight="25.0" prefWidth="110.0" text="Journal">
+                     <HBox.margin>
+                        <Insets right="35.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="aproposButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#aProposAction" prefHeight="25.0" prefWidth="110.0" text="A Propos">
+                     <HBox.margin>
+                        <Insets right="35.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="albumButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#albumAction" prefHeight="25.0" prefWidth="110.0" text="Album" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <VBox layoutX="2.0" layoutY="157.0" prefHeight="504.0" prefWidth="217.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Parametres de Profil:" underline="true">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Button fx:id="paramsProfil" mnemonicParsing="false" onAction="#paramsProfilAction" text="Informations Personelles">
+                     <VBox.margin>
+                        <Insets left="5.0" top="30.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="paramsCentre" mnemonicParsing="false" onAction="#paramsCentreAction" text="Loisirs et Centres d'intérêts">
+                     <VBox.margin>
+                        <Insets left="5.0" top="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="paramsEduc" mnemonicParsing="false" onAction="#paramsEducAction" text="Education">
+                     <VBox.margin>
+                        <Insets left="5.0" top="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="paramsEmp" mnemonicParsing="false" onAction="#paramsEmpAction" text="Emploi">
+                     <VBox.margin>
+                        <Insets left="5.0" top="20.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+            <ScrollPane hbarPolicy="NEVER" layoutX="204.0" layoutY="160.0" prefHeight="485.0" prefWidth="742.0">
+               <content>
+                  <AnchorPane prefHeight="472.0" prefWidth="739.0">
+                     <children>
+                        <Label layoutX="6.0" layoutY="7.0" text="Education" underline="true">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <VBox fx:id="vboxScolarite" layoutY="79.0" prefHeight="403.0" prefWidth="739.0">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="739.0">
+                                 <children>
+                                    <AnchorPane prefHeight="100.0" prefWidth="351.0">
+                                       <children>
+                                          <Label layoutX="10.0" layoutY="5.0" text="Titre des études" underline="true" />
+                                          <Label layoutX="10.0" layoutY="48.0" text="Date de début" underline="true" />
+                                          <Label layoutX="112.0" layoutY="48.0" text="Date de fin" underline="true" />
+                                          <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="296.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../Images/delete.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="296.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../Images/edit1.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="10.0" layoutY="25.0" text="Laaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabel" />
+                                          <Label layoutX="10.0" layoutY="69.0" text="2006" />
+                                          <Label layoutX="112.0" layoutY="69.0" text="2010" />
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <Button fx:id="ajouterEducation" layoutX="6.0" layoutY="41.0" mnemonicParsing="false" onAction="#ajouterScolariteAction" text="Ajouter un établissement" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>

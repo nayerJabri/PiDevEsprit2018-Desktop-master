@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="730.0" prefWidth="1013.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.EvenementAfficherAdminController">
+           <stylesheets>
+        <URL value="@Stylesheet.css" />
+    </stylesheets>
+    <children>
+       
+       <HBox layoutX="1.0" layoutY="2.0" prefHeight="64.0" prefWidth="1106.0" styleClass="dash">
+         <children>
+            <Label prefHeight="39.0" prefWidth="786.0" text="Consultation des Evenements" textFill="#6c6c6c">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="40.0" top="10.0" />
+               </HBox.margin>
+            </Label>
+            <HBox prefHeight="63.0" prefWidth="281.0">
+               <children>
+                  <ImageView fitHeight="33.0" fitWidth="38.0">
+                     <image>
+                        <Image url="@../picture/notification.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets top="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fitHeight="49.0" fitWidth="45.0">
+                     <image>
+                        <Image url="@../picture/User_Executive_1.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <MenuButton mnemonicParsing="false" style="-fx-background-color: transparent;" text="Admin Admin">
+                    <items>
+                      <MenuItem mnemonicParsing="false" styleClass="menuItem" text="Logout" />
+                    </items>
+                     <font>
+                        <Font name="Ebrima Bold" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="5.0" top="25.0" />
+                     </HBox.margin>
+                  </MenuButton>
+               </children>
+            </HBox>
+         </children></HBox>
+      <AnchorPane layoutY="3.0" prefHeight="730.0" prefWidth="1107.0">
+         <children>
+            <TableView fx:id="display" layoutX="41.0" layoutY="76.0" onMouseClicked="#Fetch" prefHeight="320.0" prefWidth="439.0" style="-fx-background-color: silver;">
+              <columns>
+                  <TableColumn fx:id="image" minWidth="0.0" prefWidth="0.0" text="imageEve" />
+                <TableColumn fx:id="nbplaces" prefWidth="65.33333587646484" text="nbplaces" />
+                <TableColumn fx:id="date" prefWidth="111.33334350585938" text="dateEvenement" />
+                  <TableColumn fx:id="titre" prefWidth="77.0" text="titre" />
+                  <TableColumn fx:id="description" prefWidth="112.0" text="description" />
+                  <TableColumn fx:id="place" prefWidth="69.0" text="place" />
+                  <TableColumn fx:id="ColumnIdEvenement" prefWidth="75.0" text="idEvenement" visible="false" />
+              </columns>
+            </TableView>
+            <TextField fx:id="placee" layoutX="815.0" layoutY="388.0" prefHeight="69.0" prefWidth="222.0" />
+            <TextField fx:id="nbplacess" layoutX="615.0" layoutY="187.0" style="-fx-opacity: 0;" />
+            <TextField fx:id="titree" layoutX="804.0" layoutY="90.0" prefHeight="58.0" prefWidth="238.0" />
+            <Label layoutX="584.0" layoutY="191.0" prefHeight="39.0" prefWidth="211.0" text="dateEvenement :">
+               <font>
+                  <Font size="27.0" />
+               </font></Label>
+            <Label layoutX="678.0" layoutY="102.0" prefHeight="39.0" prefWidth="80.0" text="titre :">
+               <font>
+                  <Font size="27.0" />
+               </font></Label>
+            <Label layoutX="635.0" layoutY="522.0" text="description :">
+               <font>
+                  <Font size="27.0" />
+               </font></Label>
+            <Label layoutX="665.0" layoutY="405.0" text="place :">
+               <font>
+                  <Font size="27.0" />
+               </font></Label>
+            <DatePicker fx:id="dateEvenement" layoutX="809.0" layoutY="169.0" prefHeight="76.0" prefWidth="235.0" />
+            <TextArea fx:id="descriptionn" layoutX="811.0" layoutY="494.0" prefHeight="119.0" prefWidth="235.0" />
+            <JFXButton fx:id="Update" buttonType="RAISED" layoutX="303.0" layoutY="426.0" onAction="#modifierEvenements" prefHeight="57.0" prefWidth="145.0" style="-fx-background-color: #24445C;" text="Modifier" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="DELETE" buttonType="RAISED" layoutX="62.0" layoutY="427.0" onAction="#supprimerEvenements" prefHeight="57.0" prefWidth="145.0" ripplerFill="BLACK" style="-fx-background-color: #24445C;" text="Supprimer" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font></JFXButton>
+            <Label layoutX="673.0" layoutY="299.0" text="image :">
+               <font>
+                  <Font size="27.0" />
+               </font></Label>
+            <JFXButton fx:id="Image" buttonType="RAISED" layoutX="858.0" layoutY="291.0" onAction="#UploadImage" prefHeight="57.0" prefWidth="137.0" style="-fx-background-color: #24445C;" text="Image" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font></JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="865.0" layoutY="631.0" onAction="#ajouter" prefHeight="57.0" prefWidth="158.0" style="-fx-background-color: #24445C;" text="Ajouter" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font></JFXButton>
+            <Label fx:id="ramy" layoutX="870.0" layoutY="151.0" text="choisir un titre SVP!!" textFill="#eb0909" visible="false" />
+            <Label fx:id="ramy1" layoutX="869.0" layoutY="460.0" text="choisir une place SVP!!" visible="false" />
+            <Label fx:id="ramy2" layoutX="874.0" layoutY="610.0" text="choisir un descriptionSVP!!" visible="false" />
+            <Label fx:id="datenow" layoutX="865.0" layoutY="248.0" text="choisir une date SVP!!" textFill="#ee0303" visible="false" />
+            <Label fx:id="date_act" layoutX="860.0" layoutY="268.0" text="choisir une date supérieur" textFill="#e40b0b" visible="false" />
+            <TableView fx:id="display1" layoutX="49.0" layoutY="509.0" prefHeight="196.0" prefWidth="440.0">
+              <columns>
+                <TableColumn fx:id="contenu" prefWidth="433.0" text="avis" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

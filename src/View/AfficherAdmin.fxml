@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="485.0" prefWidth="786.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.EvenementAfficherAdminController">
+   <children>
+      <AnchorPane layoutY="3.0" prefHeight="485.0" prefWidth="786.0">
+         <children>
+            <TableView fx:id="display" layoutX="13.0" layoutY="7.0" onMouseClicked="#Fetch" prefHeight="234.0" prefWidth="427.0" style="-fx-background-color: silver;">
+              <columns>
+                  <TableColumn fx:id="image" minWidth="0.0" prefWidth="0.0" text="imageEve" />
+                <TableColumn fx:id="nbplaces" prefWidth="56.0" text="nbplaces" />
+                <TableColumn fx:id="date" prefWidth="111.0" text="dateEvenement" />
+                  <TableColumn fx:id="titre" prefWidth="60.0" text="titre" />
+                  <TableColumn fx:id="description" prefWidth="120.0" text="description" />
+                  <TableColumn fx:id="place" prefWidth="85.0" text="place" />
+                  <TableColumn fx:id="ColumnIdEvenement" prefWidth="75.0" text="idEvenement" visible="false" />
+              </columns>
+            </TableView>
+            <TextField fx:id="placee" layoutX="611.0" layoutY="222.0" />
+            <TextField fx:id="nbplacess" layoutX="615.0" layoutY="187.0" style="-fx-opacity: 0;" />
+            <TextField fx:id="titree" layoutX="614.0" layoutY="57.0" />
+            <Label layoutX="510.0" layoutY="104.0" text="dateEvenement :" />
+            <Label layoutX="545.0" layoutY="61.0" text="titre :" />
+            <Label layoutX="535.0" layoutY="299.0" text="description :" />
+            <Label layoutX="542.0" layoutY="222.0" text="place :" />
+            <DatePicker fx:id="dateEvenement" layoutX="614.0" layoutY="100.0" prefHeight="25.0" prefWidth="149.0" />
+            <TextArea fx:id="descriptionn" layoutX="615.0" layoutY="284.0" prefHeight="119.0" prefWidth="149.0" />
+            <JFXButton fx:id="Update" buttonType="RAISED" layoutX="296.0" layoutY="260.0" onAction="#modifierEvenements" prefHeight="25.0" prefWidth="73.0" style="-fx-background-color: #254721;" text="Modifier" textFill="WHITE" />
+            <JFXButton fx:id="DELETE" buttonType="RAISED" layoutX="97.0" layoutY="260.0" onAction="#supprimerEvenements" prefHeight="25.0" prefWidth="73.0" ripplerFill="BLACK" style="-fx-background-color: #254721;" text="Supprimer" textFill="WHITE" />
+            <Label layoutX="548.0" layoutY="161.0" text="image :" />
+            <JFXButton fx:id="Image" buttonType="RAISED" layoutX="661.0" layoutY="157.0" onAction="#UploadImage" style="-fx-background-color: #254721;" text="Image" textFill="WHITE" />
+            <JFXButton buttonType="RAISED" layoutX="658.0" layoutY="420.0" onAction="#ajouter" style="-fx-background-color: #254721;" text="Ajouter" textFill="WHITE" />
+            <Label fx:id="ramy" layoutX="615.0" layoutY="82.0" text="choisir un titre SVP!!" textFill="#eb0909" visible="false" />
+            <Label fx:id="ramy1" layoutX="627.0" layoutY="255.0" text="choisir une place SVP!!" visible="false" />
+            <Label fx:id="ramy2" layoutX="596.0" layoutY="403.0" text="choisir un descriptionSVP!!" visible="false" />
+            <Label fx:id="datenow" layoutX="633.0" layoutY="125.0" text="choisir une date SVP!!" textFill="#ee0303" visible="false" />
+            <Label fx:id="date_act" layoutX="633.0" layoutY="140.0" text="choisir une date supérieur" textFill="#e40b0b" visible="false" />
+            <TableView fx:id="display1" layoutX="14.0" layoutY="300.0" prefHeight="176.0" prefWidth="427.0">
+              <columns>
+                <TableColumn fx:id="contenu" prefWidth="433.0" text="avis" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

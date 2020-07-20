@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ParamsCentreController">
+         <children>
+            <AnchorPane layoutX="204.0" layoutY="160.0" prefHeight="485.0" prefWidth="742.0">
+               <children>
+                  <Label layoutX="6.0" layoutY="7.0" text="Loisirs et Centres d'intérêts">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <VBox layoutY="33.0" prefHeight="452.0" prefWidth="742.0">
+                     <children>
+                        <HBox prefHeight="26.0" prefWidth="742.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#ajouterFilmAction" text="Ajouter Film">
+                                 <HBox.margin>
+                                    <Insets left="45.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#ajouterSerieAction" text="Ajouter Serie TV">
+                                 <HBox.margin>
+                                    <Insets left="50.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#ajouterLivreAction" text="Ajouter Livre">
+                                 <HBox.margin>
+                                    <Insets left="50.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#ajouterArtistAction" text="Ajouter Artist">
+                                 <HBox.margin>
+                                    <Insets left="50.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#ajouterLoisirAction" text="Ajouter Activité">
+                                 <HBox.margin>
+                                    <Insets left="50.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="140.0" prefWidth="742.0">
+                           <children>
+                              <ScrollPane hbarPolicy="NEVER" prefHeight="200.0" prefWidth="368.0">
+                                 <HBox.margin>
+                                    <Insets right="6.0" />
+                                 </HBox.margin>
+                                 <content>
+                                    <AnchorPane prefHeight="138.0" prefWidth="200.0">
+                                       <children>
+                                          <Label text="Films préférés:">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <VBox fx:id="vboxFilm" layoutY="19.0" prefHeight="119.0" prefWidth="366.0">
+                                             <children>
+                                                <HBox prefHeight="17.0" prefWidth="366.0" style="-fx-border-color: black;">
+                                                   <children>
+                                                      <Label prefWidth="330.0" text="Star Wars: The Last Jedi">
+                                                         <HBox.margin>
+                                                            <Insets left="1.0" />
+                                                         </HBox.margin>
+                                                      </Label>
+                                                      <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                                         <HBox.margin>
+                                                            <Insets left="10.0" />
+                                                         </HBox.margin>
+                                                         <image>
+                                                            <Image url="@../Images/delete.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </ScrollPane>
+                              <ScrollPane hbarPolicy="NEVER" prefHeight="200.0" prefWidth="368.0">
+                                 <content>
+                                    <AnchorPane prefHeight="138.0" prefWidth="200.0">
+                                       <children>
+                                          <Label text="Série de télévision préférées:">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <VBox fx:id="vboxSerie" layoutY="19.0" prefHeight="119.0" prefWidth="366.0">
+                                             <children>
+                                                <HBox prefHeight="17.0" prefWidth="366.0" style="-fx-border-color: black;">
+                                                   <children>
+                                                      <Label prefWidth="330.0" text="Game of Thrones">
+                                                         <HBox.margin>
+                                                            <Insets left="1.0" />
+                                                         </HBox.margin>
+                                                      </Label>
+                                                      <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                                         <HBox.margin>
+                                                            <Insets left="10.0" />
+                                                         </HBox.margin>
+                                                         <image>
+                                                            <Image url="@../Images/delete.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="4.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="140.0" prefWidth="742.0">
+                           <children>
+                              <ScrollPane hbarPolicy="NEVER" prefHeight="200.0" prefWidth="368.0">
+                                 <HBox.margin>
+                                    <Insets right="6.0" />
+                                 </HBox.margin>
+                                 <content>
+                                    <AnchorPane prefHeight="138.0" prefWidth="200.0">
+                                       <children>
+                                          <Label text="Groupes de musique / Artistes préférés:">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <VBox fx:id="vboxArtist" layoutY="19.0" prefHeight="119.0" prefWidth="366.0">
+                                             <children>
+                                                <HBox prefHeight="17.0" prefWidth="366.0" style="-fx-border-color: black;">
+                                                   <children>
+                                                      <Label prefWidth="330.0" text="Justin Timberlake">
+                                                         <HBox.margin>
+                                                            <Insets left="1.0" />
+                                                         </HBox.margin>
+                                                      </Label>
+                                                      <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                                         <HBox.margin>
+                                                            <Insets left="10.0" />
+                                                         </HBox.margin>
+                                                         <image>
+                                                            <Image url="@../Images/delete.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </ScrollPane>
+                              <ScrollPane hbarPolicy="NEVER" prefHeight="200.0" prefWidth="368.0">
+                                 <content>
+                                    <AnchorPane prefHeight="138.0" prefWidth="200.0">
+                                       <children>
+                                          <Label text="Livres préférés:">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <VBox fx:id="vboxLivre" layoutY="19.0" prefHeight="119.0" prefWidth="366.0">
+                                             <children>
+                                                <HBox prefHeight="17.0" prefWidth="366.0" style="-fx-border-color: black;">
+                                                   <children>
+                                                      <Label prefWidth="330.0" text="Harry Potter and the Half-Blood Prince ">
+                                                         <HBox.margin>
+                                                            <Insets left="1.0" />
+                                                         </HBox.margin>
+                                                      </Label>
+                                                      <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                                         <HBox.margin>
+                                                            <Insets left="10.0" />
+                                                         </HBox.margin>
+                                                         <image>
+                                                            <Image url="@../Images/delete.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="1.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="141.0" prefWidth="742.0">
+                           <children>
+                              <ScrollPane hbarPolicy="NEVER" prefHeight="200.0" prefWidth="368.0">
+                                 <HBox.margin>
+                                    <Insets top="1.0" />
+                                 </HBox.margin>
+                                 <content>
+                                    <AnchorPane prefHeight="138.0" prefWidth="200.0">
+                                       <children>
+                                          <Label text="Loisirs:">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <VBox fx:id="vboxLoisir" layoutY="19.0" prefHeight="119.0" prefWidth="366.0">
+                                             <children>
+                                                <HBox prefHeight="17.0" prefWidth="366.0" style="-fx-border-color: black;">
+                                                   <children>
+                                                      <Label prefWidth="330.0" text="Prendre soin des plantes de la maison ">
+                                                         <HBox.margin>
+                                                            <Insets left="1.0" />
+                                                         </HBox.margin>
+                                                      </Label>
+                                                      <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                                         <HBox.margin>
+                                                            <Insets left="10.0" />
+                                                         </HBox.margin>
+                                                         <image>
+                                                            <Image url="@../Images/delete.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <Label fx:id="nomp" layoutX="171.0" layoutY="3.0" text="Abdennadher Achraf">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="photop" fitHeight="119.0" fitWidth="123.0" layoutX="41.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/5a98b6dd37fff.jpg" />
+               </image>
+            </ImageView>
+            <HBox alignment="CENTER" layoutY="123.0" prefHeight="37.0" prefWidth="948.0">
+               <children>
+                  <Button fx:id="journalButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#journalAction" prefHeight="25.0" prefWidth="110.0" text="Journal">
+                     <HBox.margin>
+                        <Insets right="35.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="aproposButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#aProposAction" prefHeight="25.0" prefWidth="110.0" text="A Propos">
+                     <HBox.margin>
+                        <Insets right="35.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="albumButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#albumAction" prefHeight="25.0" prefWidth="110.0" text="Album" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <VBox layoutX="2.0" layoutY="157.0" prefHeight="504.0" prefWidth="217.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Parametres de Profil:" underline="true">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Button fx:id="paramsProfil" mnemonicParsing="false" onAction="#paramsProfilAction" text="Informations Personelles">
+                     <VBox.margin>
+                        <Insets left="5.0" top="30.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="paramsCentre" mnemonicParsing="false" onAction="#paramsCentreAction" text="Loisirs et Centres d'intérêts">
+                     <VBox.margin>
+                        <Insets left="5.0" top="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="paramsEduc" mnemonicParsing="false" onAction="#paramsEducAction" text="Education">
+                     <VBox.margin>
+                        <Insets left="5.0" top="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="paramsEmp" mnemonicParsing="false" onAction="#paramsEmpAction" text="Emploi">
+                     <VBox.margin>
+                        <Insets left="5.0" top="20.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>

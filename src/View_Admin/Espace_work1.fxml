@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="holderPane" prefHeight="801.0" prefWidth="1088.0" stylesheets="@Stylesheet.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaceadmin1.Espace_work1Controller">
+        <stylesheets>
+        <URL value="@Stylesheet.css" />
+    </stylesheets>
+    <children>
+                 <HBox layoutX="1.0" layoutY="2.0" prefHeight="64.0" prefWidth="1106.0" styleClass="dash">
+         <children>
+            <Label prefHeight="39.0" prefWidth="786.0" text="Les Espaces confirmés" textFill="#6c6c6c">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="40.0" top="10.0" />
+               </HBox.margin>
+            </Label>
+            <HBox prefHeight="63.0" prefWidth="281.0">
+               <children>
+                  <ImageView fitHeight="33.0" fitWidth="38.0">
+                     <image>
+                        <Image url="@../picture/notification.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets top="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fitHeight="49.0" fitWidth="45.0">
+                     <image>
+                        <Image url="@../picture/User_Executive_1.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <MenuButton mnemonicParsing="false" style="-fx-background-color: transparent;" text="Admin Admin">
+                    <items>
+                      <MenuItem mnemonicParsing="false" styleClass="menuItem" text="Logout" />
+                    </items>
+                     <font>
+                        <Font name="Ebrima Bold" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="5.0" top="25.0" />
+                     </HBox.margin>
+                  </MenuButton>
+               </children>
+            </HBox>
+         </children></HBox>
+      <TableView fx:id="listEspace" layoutX="46.0" layoutY="129.0" prefHeight="446.0" prefWidth="1005.0">
+        <columns>
+          <TableColumn fx:id="titre" minWidth="126.0" prefWidth="75.0" text="Titre" />
+          <TableColumn fx:id="description" minWidth="126.0" prefWidth="75.0" text="Description" />
+            <TableColumn fx:id="email" minWidth="126.0" prefWidth="75.0" text="Email" />
+            <TableColumn fx:id="adresse" minWidth="126.0" prefWidth="75.0" text="Adresse" />
+            <TableColumn fx:id="photo" minWidth="126.0" prefWidth="75.0" text="Photo" />
+            <TableColumn fx:id="longitude" minWidth="126.0" prefWidth="75.0" text="Longitude" />
+            <TableColumn fx:id="latitude" minWidth="126.0" prefWidth="75.0" text="Latitude" />
+            <TableColumn fx:id="iduser" minWidth="126.0" prefWidth="75.0" text="IdUser" />
+        </columns>
+      </TableView>
+      <TextField fx:id="recherche" layoutX="46.0" layoutY="87.0" promptText="Recherche">
+         <font>
+            <Font name="Ebrima" size="15.0" />
+         </font>
+      </TextField>
+      <ImageView fx:id="image1" fitHeight="150.0" fitWidth="200.0" layoutX="236.0" layoutY="598.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="image4" fitHeight="150.0" fitWidth="200.0" layoutX="884.0" layoutY="598.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="image3" fitHeight="150.0" fitWidth="200.0" layoutX="672.0" layoutY="598.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="image2" fitHeight="150.0" fitWidth="200.0" layoutX="455.0" layoutY="598.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="image11" fitHeight="150.0" fitWidth="200.0" layoutX="24.0" layoutY="598.0" pickOnBounds="true" preserveRatio="true" />
+      
+      
+      
+   </children>
+</AnchorPane>

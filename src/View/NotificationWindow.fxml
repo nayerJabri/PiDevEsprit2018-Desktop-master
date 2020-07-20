@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="400.0" maxWidth="500.0" prefHeight="400.0" prefWidth="510.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.NotificationController">
+   <rotationAxis>
+      <Point3D />
+   </rotationAxis>
+   <top>
+      <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="100.0" prefHeight="50.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="unseenButton" onAction="#unseenAction" prefHeight="50.0" prefWidth="170.0" text="Notifications non vue" />
+            <JFXButton fx:id="seenButton" onAction="#seenAction" prefHeight="50.0" prefWidth="170.0" text="Notifications vue" />
+            <JFXButton fx:id="makeAsSeenButton" onAction="#makeAsSeenAction" prefHeight="50.0" prefWidth="170.0" text="Marquer tous comme lue" />
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <ScrollPane fx:id="scrollContainer" hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <content>
+            <VBox prefHeight="350.0" prefWidth="485.0">
+               <children>
+                  <HBox prefHeight="60.0" prefWidth="430.0">
+                     <children>
+                        <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/5a98b6dd37fff.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="60.0" prefWidth="120.0" text="Med Ramy Hajji" />
+                        <Label prefHeight="60.0" prefWidth="140.0" text="a envoyer une demande">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="70.0" text="Confirmer">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="70.0" text="Rejeter">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="60.0" prefWidth="430.0">
+                     <children>
+                        <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/5a98b6dd37fff.jpg" />
+                           </image>
+                        </ImageView>
+                        <VBox prefHeight="60.0" prefWidth="430.0">
+                           <children>
+                              <HBox prefHeight="30.0" prefWidth="430.0">
+                                 <children>
+                                    <Label prefHeight="30.0" prefWidth="330.0" text="Achraf Abdennadher">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label prefHeight="30.0" prefWidth="100.0" text="12:56am" />
+                                 </children>
+                              </HBox>
+                              <Label prefHeight="30.0" prefWidth="430.0" text="aaaaaa ti winik">
+                                 <VBox.margin>
+                                    <Insets left="5.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.controlsfx.control.Rating?>
+
+<AnchorPane id="AnchorPane" fx:id="holderPane" prefHeight="730.0" prefWidth="1013.0" style="-fx-background-color: #edf2f6;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.EspaceContenuController">
+   <children>
+      <Pane layoutX="22.0" layoutY="41.0" prefHeight="646.0" prefWidth="480.0" style="-fx-background-color: #fff;">
+         <children>
+            <ImageView fx:id="image" fitHeight="264.0" fitWidth="428.0" layoutX="24.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="image1" fitHeight="106.0" fitWidth="200.0" layoutX="19.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="image3" fitHeight="106.0" fitWidth="200.0" layoutX="253.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="image11" fitHeight="106.0" fitWidth="200.0" layoutX="21.0" layoutY="430.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="image31" fitHeight="106.0" fitWidth="200.0" layoutX="255.0" layoutY="430.0" pickOnBounds="true" preserveRatio="true" />
+            <Rating fx:id="rating" layoutX="152.0" layoutY="536.0" />
+            <JFXButton fx:id="switchUpdate" layoutX="206.0" layoutY="593.0" onAction="#switchUpdate" style="-fx-background-color: #ff5e3a;" text="Modifier" />
+         </children>
+      </Pane>
+      <VBox layoutX="507.0" layoutY="41.0" maxHeight="646.0" prefHeight="646.0" prefWidth="489.0" style="-fx-background-color: #fff;">
+         <children>
+            <Text fill="#ff5e3a" strokeType="OUTSIDE" strokeWidth="0.0" text="Titre d'espace :" wrappingWidth="162.484375">
+               <font>
+                  <Font name="Ebrima Bold" size="22.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </VBox.margin>
+            </Text>
+            <Label fx:id="titre" alignment="TOP_CENTER" text="Label" textFill="#494c62">
+               <font>
+                  <Font name="Ebrima Bold" size="22.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </Label>
+            <Text fill="#ff5e3a" strokeType="OUTSIDE" strokeWidth="0.0" text="Adresse :" wrappingWidth="89.99999923631549">
+               <font>
+                  <Font name="Ebrima Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </Text>
+            <Label fx:id="adresse" text="Label">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </Label>
+            <Text fill="#ff5e3a" strokeType="OUTSIDE" strokeWidth="0.0" text="Email :" wrappingWidth="81.99999923631549">
+               <font>
+                  <Font name="Ebrima Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </Text>
+            <Label fx:id="email" text="email">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </Label>
+            <Text fill="#ff5e3a" strokeType="OUTSIDE" strokeWidth="0.0" text="Description :" wrappingWidth="109.99999923631549">
+               <font>
+                  <Font name="Ebrima Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </Text>
+            <VBox fx:id="bb" maxHeight="-Infinity" minHeight="-Infinity" prefWidth="439.0">
+               <children>
+                  <Label fx:id="description" text="Label">
+                     <font>
+                        <Font name="Ebrima" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <Label layoutX="292.0" layoutY="698.0" style="-fx-background-color: #fff;" text="Pour mieux connaitre votre destination " />
+      <JFXButton fx:id="map" layoutX="568.0" layoutY="693.0" onAction="#switchMap" style="-fx-background-color: #ff5e3a;" text="Map" />
+   </children>
+</AnchorPane>

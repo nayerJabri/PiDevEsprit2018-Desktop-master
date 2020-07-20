@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LayoutFrontController12">
+   <children>
+      <AnchorPane fx:id="holderPane" layoutX="79.0" layoutY="70.0" prefHeight="730.0" prefWidth="1013.0" style="-fx-background-color: #edf2f6;;" />
+      <fx:include fx:id="menubar" source="Menubar.fxml" />
+      <VBox prefHeight="800.0" prefWidth="80.0" style="-fx-background-color: #fff;" stylesheets="@layoutfront.css">
+         <children>
+            <Pane prefHeight="70.0" prefWidth="80.0" style="-fx-background-color: #ff5e3a;">
+               <children>
+                  <ImageView fitHeight="62.0" fitWidth="58.0" layoutX="11.0" layoutY="5.0">
+                     <image>
+                        <Image url="@../Images/icons8-heart-outline-filled-100.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <VBox prefHeight="729.0" prefWidth="80.0">
+               <children>
+                  <VBox prefHeight="742.0" prefWidth="80.0">
+
+                     <children>
+                          
+                        <Pane prefHeight="75.0" prefWidth="80.0">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Pane>
+                        <Pane prefHeight="62.0" prefWidth="80.0" styleClass="menu" stylesheets="@../styles/layoutfront.css">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <children>
+                              <ImageView fx:id="home" fitHeight="34.0" fitWidth="37.0" layoutX="18.0" layoutY="14.0" onMouseClicked="#home">
+                                 <image>
+                                    <Image url="@../Images/icons8-home-100.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane onMouseClicked="#espaceAction" prefHeight="62.0" prefWidth="80.0" styleClass="menu" stylesheets="@../styles/layoutfront.css">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <children>
+                              <ImageView fx:id="espace" fitHeight="34.0" fitWidth="37.0" layoutX="18.0" layoutY="14.0">
+                                 <image>
+                                    <Image url="@../Images/icons8-building-100.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane onMouseClicked="#eventAction" prefHeight="62.0" prefWidth="80.0" styleClass="menu" stylesheets="@../styles/layoutfront.css">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <children>
+                              <ImageView fx:id="evenement" fitHeight="34.0" fitWidth="37.0" layoutX="18.0" layoutY="14.0">
+                                 <image>
+                                    <Image url="@../Images/icons8-calendar-100.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane onMouseClicked="#searchAction" prefHeight="62.0" prefWidth="80.0" styleClass="menu" stylesheets="@../styles/layoutfront.css">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <children>
+                              <ImageView fx:id="profile" fitHeight="34.0" fitWidth="37.0" layoutX="18.0" layoutY="14.0">
+                                 <image>
+                                    <Image url="@../Images/icons8-user-100.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane onMouseClicked="#matchingAction" prefHeight="62.0" prefWidth="80.0" styleClass="menu" stylesheets="@../styles/layoutfront.css">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <children>
+                              <ImageView fx:id="interaction" fitHeight="37.0" fitWidth="34.0" layoutX="18.0" layoutY="14.0">
+                                 <image>
+                                    <Image url="@../Images/icons8-communication-100.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+
+                        <Pane onMouseClicked="#forumAction" prefHeight="62.0" prefWidth="80.0" styleClass="menu" stylesheets="@../styles/layoutfront.css">
+
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <children>
+                              <ImageView fitHeight="34.0" fitWidth="37.0" layoutX="18.0" layoutY="14.0">
+                                 <image>
+                                    <Image url="@../Images/icons8-forum-100.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox layoutX="1092.0" layoutY="70.0" prefHeight="730.0" prefWidth="209.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="1092.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="70.0">
+         <children>
+            <fx:include fx:id="rightbar" source="RightBar.fxml" />
+            <Pane prefHeight="88.0" prefWidth="209.0" style="-fx-background-color: #7c5ac2;">
+               <children>
+                  <ImageView fitHeight="54.0" fitWidth="63.0" layoutX="73.0" layoutY="13.0">
+                     <image>
+                        <Image url="@../Images/icons8-communication-96.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children></VBox>
+   </children>
+</AnchorPane>

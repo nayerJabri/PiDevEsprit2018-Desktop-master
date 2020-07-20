@@ -1,0 +1,66 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.parent{
+    -fx-background-color: #fff;
+}
+
+.sidebar{
+    -fx-background-color: #24445C;
+}
+.btns{
+    -fx-background-color: transparent;
+}
+
+.btns:hover{
+     -fx-border-color:#25a89f;
+     -fx-border-width: 0 0 0 6px;
+}
+
+.dash{
+   
+    -fx-border-width:0 0 0.5px 0;
+    -fx-border-color:#7387A8;
+     
+}
+
+.Button-module{
+    -fx-background-color: #25a89f;
+    
+}
+.Button-module:hover{
+    -fx-background-color:  #24445C;
+    
+}
+.card-01{
+    -fx-background-color: rgba(0, 162, 211,0.3);
+}
+.module{
+     -fx-border-color:#DCDCDC;
+    -fx-background-color:#fff;
+}
+.module:hover{
+    -fx-background-color: #EFEFEF;
+    
+}
+.picture{
+    -fx-width: 200px;
+    -fx-height:200px;
+  
+    -fx-background-radius:  50% ;
+    
+    -fx-background-color: red;
+    
+    
+}
+
+.menuItem{
+    -fx-background-color:#7387A8;
+    
+}
+
+.menuItem:hover{
+    -fx-background-color: #25a89f;
+    -fx-cursor: Hand;
+}

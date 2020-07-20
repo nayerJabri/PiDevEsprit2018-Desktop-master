@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="holderPane" prefHeight="657.0" prefWidth="397.0" style="-fx-background-color: #edf2f6;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.UpdateEspaceController">
+   <children>
+      <Pane prefHeight="657.0" prefWidth="465.0" style="-fx-background-color: #fff;">
+         <children>
+            <Text fill="#494c62" layoutX="31.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modifier votre Espace">
+               <font>
+                  <Font name="Ebrima Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text layoutX="79.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Titre : ">
+               <font>
+                  <Font name="Ebrima" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="titre" layoutX="233.0" layoutY="129.0" promptText="Titre d'espace" />
+            <Text layoutX="74.0" layoutY="331.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description :">
+               <font>
+                  <Font name="Ebrima" size="18.0" />
+               </font>
+            </Text>
+            <TextArea fx:id="description" layoutX="229.0" layoutY="238.0" prefHeight="200.0" prefWidth="187.0" promptText="Description d'espace" />
+            <JFXButton fx:id="update" layoutX="239.0" layoutY="570.0" onAction="#update" style="-fx-background-color: #ff5e3a;" text="Modifier" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

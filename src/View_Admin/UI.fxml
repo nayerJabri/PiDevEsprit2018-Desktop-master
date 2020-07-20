@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="801.0" prefWidth="1249.0" style="-fx-background-color: white; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaceadmin1.UIController">
+    <stylesheets>
+        <URL value="@Stylesheet.css" />
+    </stylesheets>
+   <children>
+      <VBox layoutY="37.0" prefHeight="764.0" prefWidth="216.0" styleClass="sidebar">
+         <children>
+            <Pane prefHeight="64.0" prefWidth="216.0" style="-fx-border-width:0 0 1px 0;-fx-border-color:#a1aec4;">
+               <children>
+                  <Label alignment="CENTER" layoutX="21.0" layoutY="13.0" prefHeight="38.0" prefWidth="142.0" text="The Pentagon" textFill="#fff">
+                     <font>
+                        <Font name="Ebrima Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <HBox />
+            <HBox layoutX="10.0" layoutY="267.0" prefHeight="56.0" prefWidth="320.0" styleClass="btns">
+               <children>
+                  <ImageView fitHeight="22.0" fitWidth="24.0">
+                     <image>
+                        <Image url="@../picture/dashboard-128.png" />
+                       
+                     </image>
+                   <HBox.margin>
+                        <Insets left="25.0" top="25.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <JFXButton fx:id="btnHome" onAction="#switchHome" prefHeight="42.0" prefWidth="139.0" style="-fx-cursor: hand;" styleClass="nav-button" text="Home" textFill="#a1aec4">
+                     <font>
+                        <Font name="Ebrima Bold" size="17.0" />
+                     </font>
+                      <HBox.margin>
+                    <Insets left="5.0" top="20.0" />
+                     </HBox.margin>
+                 </JFXButton>
+            
+               </children>
+            
+            </HBox>
+            <HBox layoutX="10.0" layoutY="267.0" prefHeight="56.0" prefWidth="320.0" styleClass="btns">
+               <children>
+                  <ImageView fitHeight="22.0" fitWidth="24.0">
+                     <image>
+                        <Image url="@../picture/icons8-organization-26.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="25.0" top="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                   <JFXButton fx:id="btnEspace" onAction="#switchEspace" prefHeight="42.0" prefWidth="139.0" style="-fx-cursor: hand;" styleClass="nav-button" text="Espace" textFill="#a1aec4">
+                     <font>
+                        <Font name="Ebrima Bold" size="17.0" />
+                     </font>
+                      <HBox.margin>
+                    <Insets left="5.0" top="20.0" />
+                     </HBox.margin>
+                 </JFXButton>
+               </children>
+               <cursor>
+                
+            
+      
+               </cursor>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="267.0" prefHeight="56.0" prefWidth="320.0" styleClass="btns">
+               <children>
+                  <ImageView fitHeight="22.0" fitWidth="24.0">
+                     <image>
+                        <Image url="@../picture/icons8-user-account-26.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="25.0" top="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                   <JFXButton fx:id="btnForum" onAction="#switchForum" prefHeight="42.0" prefWidth="139.0" style="-fx-cursor: hand;" styleClass="nav-button" text="Forum" textFill="#a1aec4">
+                     <font>
+                        <Font name="Ebrima Bold" size="17.0" />
+                     </font>
+                      <HBox.margin>
+                    <Insets left="5.0" top="20.0" />
+                     </HBox.margin>
+                 </JFXButton>
+               </children>
+               <cursor>
+               </cursor>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="267.0" prefHeight="56.0" prefWidth="320.0" styleClass="btns">
+               <children>
+                  <ImageView fitHeight="22.0" fitWidth="24.0">
+                     <image>
+                        <Image url="@../picture/icons8-collaboration-26.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="25.0" top="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <JFXButton fx:id="btnInteraction" onAction="#switchInteraction" prefHeight="42.0" prefWidth="139.0" style="-fx-cursor: hand;" styleClass="nav-button" text="Interaction" textFill="#a1aec4">
+                     <font>
+                        <Font name="Ebrima Bold" size="17.0" />
+                     </font>
+                      <HBox.margin>
+                    <Insets left="20.0" top="20.0" />
+                     </HBox.margin>
+                 </JFXButton>
+               </children>
+               <cursor>
+               </cursor>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="267.0" prefHeight="56.0" prefWidth="320.0" styleClass="btns">
+               <children>
+                  <ImageView fitHeight="22.0" fitWidth="24.0">
+                     <image>
+                        <Image url="@../picture/icons8-schedule-26%20(5).png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="25.0" top="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <JFXButton fx:id="btnEvenement" onAction="#switchEvenement" prefHeight="42.0" prefWidth="139.0" style="-fx-cursor: hand;" styleClass="nav-button" text="Événement" textFill="#a1aec4">
+                     <font>
+                        <Font name="Ebrima Bold" size="17.0" />
+                     </font>
+                      <HBox.margin>
+                    <Insets left="20.0" top="20.0" />
+                     </HBox.margin>
+                 </JFXButton>
+               </children>
+               <cursor>
+                 
+               </cursor>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="267.0" prefHeight="56.0" prefWidth="320.0" styleClass="btns">
+               <children>
+                  <ImageView fitHeight="22.0" fitWidth="24.0">
+                     <image>
+                        <Image url="@../picture/icons8-administrator-male-26.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="25.0" top="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                             <JFXButton fx:id="btnProfile" onAction="#switchProfile" prefHeight="42.0" prefWidth="139.0" style="-fx-cursor: hand;" styleClass="nav-button" text="Profile" textFill="#a1aec4">
+                     <font>
+                        <Font name="Ebrima Bold" size="17.0" />
+                     </font>
+                      <HBox.margin>
+                    <Insets left="5.0" top="20.0" />
+                     </HBox.margin>
+                 </JFXButton>
+               </children>
+               <cursor>
+                  
+               </cursor>
+            </HBox>
+                  <HBox layoutX="10.0" layoutY="267.0" prefHeight="56.0" prefWidth="320.0" styleClass="btns">
+               <children>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" translateX="20.0" translateY="15.0">
+                     <image>
+                        <Image url="@../picture/exit.png" />
+                     </image>
+                  </ImageView>
+                   <JFXButton fx:id="btnExit" onAction="#exit" prefHeight="42.0" prefWidth="139.0" style="-fx-cursor: hand;" styleClass="nav-button" text="Exit" textFill="#a1aec4">
+                     <font>
+                        <Font name="Ebrima Bold" size="17.0" />
+                     </font>
+                      <HBox.margin>
+                    <Insets left="5.0" top="13.0" />
+                     </HBox.margin>
+                 </JFXButton>
+               </children>
+               <cursor>
+                
+            
+      
+               </cursor>
+               <VBox.margin>
+                  <Insets top="300.0" />
+               </VBox.margin>
+            </HBox>
+         </children></VBox>
+         
+
+      <HBox prefHeight="37.0" prefWidth="1322.0" style="-fx-background-color: #25a89f;">
+         <children>
+            <Label alignment="CENTER" prefHeight="38.0" prefWidth="426.0" text="Dashboard" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Ebrima Bold" size="19.0" />
+               </font></Label>
+         </children></HBox>
+    
+     
+        
+        <AnchorPane fx:id="holderPane" layoutX="216.0" layoutY="36.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="764.0" prefWidth="1106.0" style="-fx-background-color:#f4f4f4;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+         </AnchorPane>
+    
+      
+      
+
+   </children>
+</AnchorPane>

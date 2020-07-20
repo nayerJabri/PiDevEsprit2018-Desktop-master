@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox layoutX="79.0" prefHeight="70.0" prefWidth="1300.0" style="-fx-background-color: #494c62;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MenuBarController">
+   <children>
+      <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-translate-y: 20; -fx-translate-x: 20;" text="The Pentagon" wrappingWidth="762.6123046875">
+         <font>
+            <Font name="Ebrima Bold" size="22.0" />
+         </font>
+      </Text>
+      <HBox prefHeight="70.0" prefWidth="372.0">
+         <children>
+            <HBox prefHeight="70.0" prefWidth="74.0">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <children>
+                  <Pane prefHeight="58.0" prefWidth="54.0">
+                     <children>
+                        <ImageView fx:id="Maparea" fitHeight="37.0" fitWidth="41.0" layoutX="7.0" layoutY="17.0" onMouseClicked="#switchMap">
+                           <image>
+                              <Image url="@../Images/icons8-europe-filled-100.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+               </children>
+            </HBox>
+            <HBox prefHeight="70.0" prefWidth="74.0">
+               <children>
+                  <Label fx:id="acceptNotifLabel" prefHeight="20.0" prefWidth="25.0" text="10" textFill="WHITE" translateY="20.0">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Ebrima" size="15.0" />
+                     </font>
+                  </Label>
+                  <Pane onMouseClicked="#acceptNotification" prefHeight="48.0" prefWidth="38.0">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="34.0" onMouseClicked="#acceptNotification" style="-fx-translate-y: 20;">
+                           <image>
+                              <Image url="@../Images/icons8-alarm-100.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+               </children>
+            </HBox>
+            <HBox prefHeight="70.0" prefWidth="74.0">
+               <children>
+                  <Label fx:id="messageNotifLabel" prefHeight="14.0" prefWidth="26.0" text="10" textFill="WHITE" translateY="20.0">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Ebrima" size="15.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="29.0" fitWidth="34.0" onMouseClicked="#messageNotification" style="-fx-translate-y: 20;">
+                     <image>
+                        <Image url="@../Images/icons8-chat-room-96.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox prefHeight="70.0" prefWidth="74.0">
+               <children>
+                  <Label fx:id="demandeNotifLabel" prefHeight="12.0" prefWidth="26.0" text="10" textFill="WHITE" translateY="20.0">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Ebrima" size="15.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="34.0" fitWidth="33.0" onMouseClicked="#demandeNotification" translateY="20.0">
+                     <image>
+                        <Image url="@../Images/icons8-notification-center-filled-96.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox prefHeight="70.0" prefWidth="74.0">
+               <children>
+                  <ImageView fitHeight="70.0" fitWidth="77.0">
+                     <image>
+                        <Image url="@../Images/icons8-administrator-male-160.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+         <HBox.margin>
+            <Insets left="80.0" />
+         </HBox.margin>
+      </HBox>
+   </children>
+</HBox>

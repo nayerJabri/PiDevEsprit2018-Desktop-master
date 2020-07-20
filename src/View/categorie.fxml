@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SujetController">
+   <children>
+      <HBox prefHeight="95.0" prefWidth="600.0" style="-fx-background-color: #dae1ea; -fx-border-color: black;">
+         <children>
+            <ImageView fitHeight="83.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="NEVER">
+
+
+            </ImageView>
+            <VBox prefHeight="94.0" prefWidth="476.0">
+               <children>
+                  <HBox prefHeight="30.0" prefWidth="476.0">
+                     <children>
+                        <Label prefHeight="18.0" prefWidth="234.0" text="Titre Du sujet ici : ">
+
+                           <font>
+                              <Font name="Cambria" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="55.0" prefWidth="476.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="text" wrappingWidth="328.5366725921631">
+                           <HBox.margin>
+                              <Insets top="5.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="31.0" prefWidth="476.0">
+                     <children>
+                        <JFXButton prefHeight="26.0" prefWidth="67.0" style="-fx-background-color: #337AB7; -fx-text-fill: white;" text="Entrer" />
+                        <JFXButton prefHeight="26.0" prefWidth="65.0" style="-fx-background-color: #26B99A; -fx-text-fill: white;" text="Button" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

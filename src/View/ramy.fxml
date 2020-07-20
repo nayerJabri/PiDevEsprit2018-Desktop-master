@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="holderPane" layoutX="79.0" layoutY="70.0" prefHeight="500.0" prefWidth="1013.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RamyController">
+   <children>
+      <AnchorPane fx:id="content" layoutX="69.0" layoutY="50.0" prefHeight="500.0" prefWidth="777.0" />
+      <JFXTextField fx:id="recherche" focusColor="#0076a3" layoutX="76.0" layoutY="-8.0" onKeyPressed="#recherche" promptText="Recherche" unFocusColor="#0076a3">
+         <font>
+            <Font name="Cambria Italic" size="15.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+         
+            </Lighting>
+         </effect></JFXTextField>
+      <JFXButton buttonType="RAISED" layoutX="714.0" layoutY="3.0" onAction="#showCalendar" prefHeight="32.0" prefWidth="113.0" style="-fx-background-color: #f8edff;" text="Calendar">
+         <font>
+            <Font size="17.0" />
+         </font></JFXButton>
+   </children>
+</AnchorPane>

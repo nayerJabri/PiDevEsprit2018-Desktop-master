@@ -1,0 +1,35 @@
+					<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+					<script src="countdown.js"></script>
+                    <script type="text/javascript">
+                        function doneHandler(result) {
+                            var year = result.getFullYear();
+                            var month = result.getMonth() + 1; // bump by 1 for humans
+                            var day = result.getDate();
+                            var h = result.getHours();
+                            var m = result.getMinutes();
+                            var s = result.getSeconds();
+                            var UTC = result.toString();
+                            var output = UTC + "\n";
+                            output += "year: " + year + "\n";
+                            output += "month: " + month + "\n";
+                            output += "day: " + day + "\n";
+                            output += "h: " + h + "\n";
+                            output += "m: " + m + "\n";
+                            output += "s: " + s + "\n";
+                            alert(output);
+                        }
+						document.init = function init(year,month,day,hour,minute,second)
+						{
+							var myCountdownTest = new Countdown({
+								year: year,
+								month	: month,
+								day		: day,
+								hour:hour,
+								minute:minute,
+								second:second,
+								width	: 400,
+								height	: 80,
+								onComplete : doneHandler
+							});
+						}
+                    </script>

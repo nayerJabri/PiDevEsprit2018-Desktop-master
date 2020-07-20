@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.BarchartEventController">
+   <children>
+      <BarChart fx:id="participationChart" prefHeight="400.0" prefWidth="600.0" title="participation">
+        <xAxis>
+          <CategoryAxis label="titre" side="BOTTOM" fx:id="x" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="y" label="nbplaces" side="LEFT" />
+        </yAxis>
+      </BarChart>
+   </children>
+</AnchorPane>

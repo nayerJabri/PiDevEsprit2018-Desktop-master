@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="holderPane" prefHeight="801.0" prefWidth="1088.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaceadmin1.ListUtilAdminController">
+    <stylesheets>
+        <URL value="@Stylesheet.css" />
+    </stylesheets>
+    <children>
+                 <HBox layoutX="1.0" layoutY="2.0" prefHeight="64.0" prefWidth="1106.0" styleClass="dash">
+         <children>
+            <Label prefHeight="39.0" prefWidth="786.0" text="Liste d'utilisateurs" textFill="#6c6c6c">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="40.0" top="10.0" />
+               </HBox.margin></Label>
+            <HBox prefHeight="63.0" prefWidth="281.0">
+               <children>
+                  <ImageView fitHeight="33.0" fitWidth="38.0">
+                     <image>
+                        <Image url="@picture/notification.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets top="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fitHeight="49.0" fitWidth="45.0">
+                     <image>
+                        <Image url="@picture/User_Executive_1.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <MenuButton mnemonicParsing="false" style="-fx-background-color: transparent;" text="Admin Admin">
+                    <items>
+                      <MenuItem mnemonicParsing="false" styleClass="menuItem" text="Logout" />
+                    </items>
+                     <font>
+                        <Font name="Ebrima Bold" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="5.0" top="25.0" />
+                     </HBox.margin>
+                  </MenuButton>
+               </children>
+            </HBox>
+         </children></HBox>
+      <TableView fx:id="userTable" layoutX="10.0" layoutY="122.0" prefHeight="477.0" prefWidth="1089.0">
+        <columns>
+          <TableColumn fx:id="nom" prefWidth="124.0" text="Nom" />
+          <TableColumn fx:id="prenom" prefWidth="107.0" text="Prenom" />
+          <TableColumn fx:id="dn" prefWidth="129.0" text="Date de naissance" />
+          <TableColumn fx:id="sexe" minWidth="0.0" prefWidth="60.0" text="Sexe" />
+            <TableColumn fx:id="ville" prefWidth="172.0" text="Ville" />
+          <TableColumn fx:id="tel" minWidth="9.0" prefWidth="117.0" text="Telephone" />
+          <TableColumn fx:id="occ" prefWidth="159.0" text="Occupation" />
+        </columns>
+      </TableView>
+      <TextField fx:id="filterNom" layoutX="83.0" layoutY="81.0" prefHeight="25.0" prefWidth="109.0" />
+      <Label layoutX="11.0" layoutY="85.0" text="Filter/Nom" />
+      <Label layoutX="206.0" layoutY="85.0" text="Filter/Sexe" />
+      <ComboBox fx:id="filterGender" layoutX="277.0" layoutY="81.0" prefHeight="25.0" prefWidth="98.0" />
+      <TextField fx:id="filterVille" layoutX="470.0" layoutY="81.0" prefHeight="25.0" prefWidth="109.0" />
+      <Label layoutX="398.0" layoutY="85.0" text="Filter/Ville" />
+      <Button fx:id="export" layoutX="987.0" layoutY="81.0" mnemonicParsing="false" onAction="#exportAction" text="Export en PDF" />
+      
+
+      
+      
+   </children>
+</AnchorPane>

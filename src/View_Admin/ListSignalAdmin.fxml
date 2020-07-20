@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="holderPane" prefHeight="801.0" prefWidth="1088.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaceadmin1.ListSignalAdminController">
+    <stylesheets>
+        <URL value="@Stylesheet.css" />
+    </stylesheets>
+    <children>
+                 <HBox layoutX="1.0" layoutY="2.0" prefHeight="64.0" prefWidth="1106.0" styleClass="dash">
+         <children>
+            <Label prefHeight="39.0" prefWidth="786.0" text="Liste d'utilisateurs signalés" textFill="#6c6c6c">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="40.0" top="10.0" />
+               </HBox.margin></Label>
+            <HBox prefHeight="63.0" prefWidth="281.0">
+               <children>
+                  <ImageView fitHeight="33.0" fitWidth="38.0">
+                     <image>
+                        <Image url="@picture/notification.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets top="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fitHeight="49.0" fitWidth="45.0">
+                     <image>
+                        <Image url="@picture/User_Executive_1.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <MenuButton mnemonicParsing="false" style="-fx-background-color: transparent;" text="Admin Admin">
+                    <items>
+                      <MenuItem mnemonicParsing="false" styleClass="menuItem" text="Logout" />
+                    </items>
+                     <font>
+                        <Font name="Ebrima Bold" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="5.0" top="25.0" />
+                     </HBox.margin>
+                  </MenuButton>
+               </children>
+            </HBox>
+         </children></HBox>
+      <ScrollPane layoutX="4.0" layoutY="105.0" prefHeight="660.0" prefWidth="1099.0">
+         <content>
+            <AnchorPane prefHeight="38.0" prefWidth="1097.0">
+               <children>
+                  <AnchorPane prefHeight="38.0" prefWidth="1097.0">
+                     <children>
+                        <Label layoutX="4.0" layoutY="9.0" text="Username">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="121.0" layoutY="9.0" text="Nom">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="235.0" layoutY="9.0" text="Prénom">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="447.0" layoutY="9.0" text="Email">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="346.0" layoutY="9.0" text="Téléphone">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="605.0" layoutY="9.0" text="Nb Signal">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="788.0" layoutY="9.0" text="Action">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutY="41.0" prefHeight="603.0" prefWidth="1097.0">
+                     <children>
+                        <VBox fx:id="vboxRow" prefHeight="603.0" prefWidth="1097.0">
+                           <children>
+                              <HBox prefHeight="38.0" prefWidth="1097.0">
+                                 <children>
+                                    <Label fx:id="username" text="test1234">
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="nom" text="Chaari">
+                                       <HBox.margin>
+                                          <Insets left="70.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="prenom" text="Wadii">
+                                       <HBox.margin>
+                                          <Insets left="80.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="tel" text="96585412">
+                                       <HBox.margin>
+                                          <Insets left="80.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="mail" text="wadi.chaari@gmail.com">
+                                       <HBox.margin>
+                                          <Insets left="50.0" />
+                                       </HBox.margin></Label>
+                                    <Label fx:id="nbSig" text="7">
+                                       <HBox.margin>
+                                          <Insets left="32.0" />
+                                       </HBox.margin></Label>
+                                    <Button fx:id="affCauses" mnemonicParsing="false" onAction="#afficherCausesAction" text="Afficher Causes">
+                                       <HBox.margin>
+                                          <Insets left="70.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="affPub" mnemonicParsing="false" onAction="#afficherPubAction" text="Afficher Msgs">
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin></Button>
+                                    <Button fx:id="block" mnemonicParsing="false" onAction="#bloquerAction" text="Block">
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin></Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      
+
+      
+      
+   </children>
+</AnchorPane>
